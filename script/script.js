@@ -80,10 +80,8 @@ hacerFetch()
 
 
 //              !!! IMPORTANTE
-// tenia muchas funciones usando el array productos
-// intente llamar a los productos del archivo .json y imprimirlos en otro array con map
-// pero no podia, por lo tanto use el fetch solo para imprimirlos y deje el resto de mis funciones con el array original
-// por eso no los borre de este script
+//use el fetch solo para imprimirlos y deje el resto de mis funciones con el array original
+
 
 
 function renderizarProductos(arrayDeProductos){
