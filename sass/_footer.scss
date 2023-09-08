@@ -1,0 +1,23 @@
+footer{
+    background-color: rgb(56, 48, 48);
+    color: white;
+    padding: 5px 0;
+    button{
+        font-size: 15px;
+    }
+    div.redesycontactfooter{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 40px;
+        a{
+            color: white;
+        }
+    }
+    p{
+        text-align: center;
+        font-weight: lighter;
+    }
+}
+.iconofooter{
+    font-size: 20px;
+}

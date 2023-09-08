@@ -1,0 +1,164 @@
+button:hover{
+    cursor: pointer;
+}
+.tituloNuestrosProductos {
+    margin-top: 300px;
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5 {
+        font-size: 20px;
+        color: #313122;
+        text-transform: uppercase;
+    }
+}
+.carritoComprasIcono {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+}
+#contenedorProductos {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cajaContenedorProducto {
+    background-color: whitesmoke;
+    height: 300px;
+    width: 250px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2c3e50;
+    text-align: center;
+    h6 {
+        font-family: 'Commissioner', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+    }
+    img {
+        height: 150px;
+    }
+}
+.contenedorCarrito {
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    display: none;
+    background-color: #edc778;
+    width: 90vw;
+    text-align: center;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 25px 0;
+    box-shadow: 5px 5px 10px #2c3e50;
+    div.padreTitulosCarrito {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        div.tituloCarrito {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 95%;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        div.botonSalir {
+            width: 5%;
+            align-content: center;
+            button{
+                width: 25px;
+            }
+        }
+    }
+    div.itemCarrito {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        div.bloqueSalir {
+            width: 5%;
+            button{
+                background-color: transparent;
+                border: none;
+                text-transform: uppercase;
+            }
+        }
+        .sumaYResta{
+            button{
+                width: 15%;
+            }
+            input{
+                width: 15%;
+                text-align: center;
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+    div.botonesFuncionesCarrito{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        padding-left: 20%;
+        font-weight: bold;
+        button.vaciarCarrito, button.cerrarCarrito{
+            background-color: #a6905f;
+            color: white;
+            width: 20%;
+            height: 30px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p{
+            width: 20%;
+            padding-top: 7.5px;
+        }
+    }
+    .avisoCarritoVacio{
+        color: white;
+    }
+}
+.botonAgregarACarrito{
+    margin-top: 10px;
+    background-color: #e1b745;
+    border-radius: 10px;
+    border: none;
+    p{
+        margin: 7.5px;
+    }
+}
+.productoCarrito {
+    width: 35%;
+    align-items: center;
+}
+.bloqueCarrito {
+    width: 20%;
+}
+
+.totalCarrito {
+    font-size: 18px;
+    text-align: end;
+    width: 100%;
+    margin: 10px 50px 25px 0;
+}
+
+.mostrarCarrito{    
+    display: block;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    opacity: none;
+}
+
+.productosModificados{
+    opacity: 20%;
+}

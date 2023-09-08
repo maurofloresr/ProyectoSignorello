@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Commissioner", sans-serif;
+  padding: 90px 0;
+}
+
+header {
+  background-color: #0720a4;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px; /* par que las pantallas muy grandes no quede muy distanciado*/
+  margin: 0 auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+}
+.nav-menu-item {
+  font-size: 16px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-menu-item:hover {
+  text-decoration: underline #F7BB14;
+  transition: 0.5s;
+}
+.nav-menu-active {
+  text-decoration: underline #F7BB14;
+  transition: 0.5s;
+}
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+.nav a img {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  width: 6.5em;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
+  header {
+    background-color: #0720a4;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .nav a img {
+    height: 4.8em;
+    padding: 0 30px;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu-item {
+    line-height: 70px;
+  }
+  .nav-menu-link:hover,
+  .nav-menu-active {
+    color: #F7BB14;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu_visible {
+    left: 0;
+  }
+}
+.fondoIndex {
+  background-image: url(/img/fondoindex.jpg);
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.fondoIndex h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.contenedorIndex {
+  display: flex;
+  margin: 10px 75px;
+}
+.contenedorIndex img {
+  width: 500px;
+}
+
+.contenedorIndexTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.tituloNuestrosProductos {
+  margin-top: 300px;
+  margin: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tituloNuestrosProductos h5 {
+  font-size: 20px;
+  color: #313122;
+  text-transform: uppercase;
+}
+
+.carritoComprasIcono {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+}
+
+#contenedorProductos {
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cajaContenedorProducto {
+  background-color: whitesmoke;
+  height: 300px;
+  width: 250px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #2c3e50;
+  text-align: center;
+}
+.cajaContenedorProducto h6 {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+.cajaContenedorProducto img {
+  height: 150px;
+}
+
+.contenedorCarrito {
+  display: none;
+  background-color: #edc778;
+  width: 90vw;
+  text-align: center;
+  align-items: center;
+  margin: 10px 50px;
+  padding: 25px 0;
+  box-shadow: 5px 5px 10px #2c3e50;
+}
+.contenedorCarrito div.padreTitulosCarrito {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contenedorCarrito div.padreTitulosCarrito div.tituloCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95%;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.contenedorCarrito div.padreTitulosCarrito div.botonSalir {
+  width: 5%;
+  align-content: center;
+}
+.contenedorCarrito div.padreTitulosCarrito div.botonSalir button {
+  width: 25px;
+}
+.contenedorCarrito div.itemCarrito {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.contenedorCarrito div.itemCarrito div.bloqueSalir {
+  width: 5%;
+}
+.contenedorCarrito div.itemCarrito div.bloqueSalir button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+.contenedorCarrito div.itemCarrito .sumaYResta button {
+  width: 15%;
+}
+.contenedorCarrito div.itemCarrito .sumaYResta input {
+  width: 15%;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.contenedorCarrito div.botonesFuncionesCarrito {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 20%;
+  font-weight: bold;
+}
+.contenedorCarrito div.botonesFuncionesCarrito button.vaciarCarrito, .contenedorCarrito div.botonesFuncionesCarrito button.cerrarCarrito {
+  background-color: #a6905f;
+  color: white;
+  width: 20%;
+  height: 30px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contenedorCarrito div.botonesFuncionesCarrito p {
+  width: 20%;
+  padding-top: 7.5px;
+}
+.contenedorCarrito .avisoCarritoVacio {
+  color: white;
+}
+
+.botonAgregarACarrito {
+  margin-top: 10px;
+  background-color: #e1b745;
+  border-radius: 10px;
+  border: none;
+}
+.botonAgregarACarrito p {
+  margin: 7.5px;
+}
+
+.productoCarrito {
+  width: 35%;
+  align-items: center;
+}
+
+.bloqueCarrito {
+  width: 20%;
+}
+
+.totalCarrito {
+  font-size: 18px;
+  text-align: end;
+  width: 100%;
+  margin: 10px 50px 25px 0;
+}
+
+.mostrarCarrito {
+  display: block;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  opacity: none;
+}
+
+.productosModificados {
+  opacity: 20%;
+}
+
+footer {
+  background-color: rgb(56, 48, 48);
+  color: white;
+  padding: 5px 0;
+}
+footer button {
+  font-size: 15px;
+}
+footer div.redesycontactfooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px;
+}
+footer div.redesycontactfooter a {
+  color: white;
+}
+footer p {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.iconofooter {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

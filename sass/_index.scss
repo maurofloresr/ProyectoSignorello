@@ -1,0 +1,24 @@
+.fondoIndex{
+    background-image: url(/img/fondoindex.jpg) ;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    h1{
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+.contenedorIndex{
+    display: flex;
+    margin: 10px 75px;
+    img{
+        width: 500px;
+    }
+}
+.contenedorIndexTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+}

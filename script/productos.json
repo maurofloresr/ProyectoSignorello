@@ -1,0 +1,13 @@
+[
+    {"id": 1, "nombre": "Matambre Arrollado", "precio": 1270, "img": "/img/matambre.png"},
+    {"id": 2, "nombre": "Matambres Especiales", "precio": 1350, "img": "/img/matambre.png"},
+    {"id": 3, "nombre": "Pastron", "precio": 1500, "img": "/img/matambre.png"},
+    {"id": 4, "nombre": "Arrollado de Pollo", "precio": 1000, "img": "/img/matambre.png"},
+    {"id": 5, "nombre": "Arrollado de Pollo Provenzal", "precio": 1000, "img": "/img/matambre.png"},
+    {"id": 6, "nombre": "Fiambre de Pavita y Pollo", "precio": 1030, "img": "/img/matambre.png"},
+    {"id": 7, "nombre": "Panceta Doble Tiernizada", "precio": 770, "img": "/img/matambre.png"},
+    {"id": 8, "nombre": "Panceta con Cuero", "precio": 1420, "img": "/img/matambre.png"},
+    {"id": 9, "nombre": "Panceta Arrollada", "precio": 1420, "img": "/img/matambre.png"},
+    {"id": 10, "nombre": "Jamon Cocido etiqueta negra", "precio": 850, "img": "/img/matambre.png"},
+    {"id": 11, "nombre": "Queso de Cerdo", "precio": 550, "img": "/img/matambre.png"}
+]
